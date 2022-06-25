@@ -1,5 +1,3 @@
-
-
 // set time and date to display at top of page
 
 var date = moment().format("YYYY-MM-DD");
@@ -9,6 +7,7 @@ $("#currentDay").text(date);
 // setting up system to indicate past, present, future tasks
 var showTime = function() {
 
+let thisTime = moment().format();
 
 for (i = 0; i <= 23; i++) {
     thisItem = i;
@@ -67,5 +66,3 @@ $(".saveBtn").on("click", function() {
     $("#3 textarea").val(localStorage.getItem("3pm"));
     $("#4 textarea").val(localStorage.getItem("4pm"));
     $("#5 textarea").val(localStorage.getItem("5pm"));
-
-
