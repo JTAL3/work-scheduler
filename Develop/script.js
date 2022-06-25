@@ -9,7 +9,6 @@ $("#currentDay").text(date);
 // setting up system to indicate past, present, future tasks
 var showTime = function() {
 
-let thisTime = moment().format();
 
 for (i = 0; i <= 23; i++) {
     thisItem = i;
